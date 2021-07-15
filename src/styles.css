@@ -1,0 +1,77 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.next {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.next:hover {
+  background-color: lightgrey;
+}
+
+.next[disabled] {
+  display: none;
+}
+
+.complete {
+  text-align: center;
+}
+
+.complete h1 {
+  text-align: center;
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-transform: none;
+  text-shadow: none;
+}
+
+.complete p span {
+  font-weight: bolder;
+}
+
+.answer {
+  list-style-type: upper-alpha;
+  margin: 0;
+  padding: 0;
+}
+
+.answer li {
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+  width: 50%;
+  margin-left: 25%;
+  display: flex;
+  align-items: flex-start;
+  font-size: 25px;
+}
+
+.answer li:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.answer .correct,
+.answer .correct:hover {
+  border: 1px green solid;
+  color: black;
+}
+
+.answer .incorrect,
+.answer .incorrect:hover {
+  border: 1px red solid;
+  text-decoration: line-through;
+  color: black;
+}
+
+.answer[disabled] {
+  pointer-events: none;
+}
